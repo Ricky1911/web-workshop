@@ -31,6 +31,9 @@ jobs:
           source: ./
           destination: ./_site
 
+      - name: Fix documentation site permissions
+        run: sudo chown -R "$(id -u):$(id -g)" ./_site
+
       - name: Install dependencies
         working-directory: frontend
         run: yarn install --frozen-lockfile
