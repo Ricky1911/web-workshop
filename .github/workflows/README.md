@@ -4,6 +4,8 @@
 
 在你复刻的仓库中，进入设置标签页（https://github.com/[username]/web-workshop/settings），点击左边栏的 Pages，在 Build and deployment 下方的 Source，选择 Github Actions。意思是通过自定义的 action 来部署静态 Github Pages（与之相对的是根据仓库中的 markdown 文件自动部署）
 
+本仓库最终版本的 Github Pages 根路径用于展示教学文档，`frontend.yml` 会先构建文档站，再把前端构建产物复制到 `demo/` 子路径。因此官方演示页面位于 [https://eesast.github.io/web-workshop/demo/](https://eesast.github.io/web-workshop/demo/)。如果你在自己的复刻仓库中沿用当前 workflow，前端页面对应地址通常是 `https://[username].github.io/web-workshop/demo/`。
+
 ### 后端(Docker)
 
 1. 注册 Dockers Hub 账号（[Signup | Docker](https://app.docker.com/signup)），建议使用 Github 注册。如果使用其他方式注册，请将用户名与 Github 保持一致（大小写不敏感）
