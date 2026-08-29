@@ -114,7 +114,8 @@
                 "permission": {
                   "columns": [
                     "content",
-                    "created_at"
+                    "created_at",
+                    "room_uuid"
                   ],
                   "filter": {
                     "user_uuid": {
